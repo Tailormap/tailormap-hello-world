@@ -15,7 +15,10 @@ import { HelloWorldModule } from '@tailormap-b3p/hello-world';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    CoreModule,
+    CoreModule.forRoot({
+      production: environment.production,
+      viewerBaseUrl: environment.viewerBaseUrl,
+    }),
     CoreRoutingModule,
     SharedModule,
     HelloWorldModule,
