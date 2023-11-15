@@ -37,7 +37,7 @@ const publishRelease = async () => {
   const project = 'hello-world';
   const scope = '@tailormap-b3p';
   await runCommand('npm', ['version', 'patch'], path.resolve(__dirname, './projects/', project));
-  await runCommand('ng', ['build', project]);
+  await runCommand('npm', ['run', 'build-hello-world']);
   await runCommand('npm', ['publish', '--scope=' + scope, '--registry=https://repo.b3p.nl/nexus/repository/npm-public'], path.resolve(__dirname, './dist/', project));
   await runCommand('git', ['add', '-A']);
   const currentVersion = await getCurrentVersion(project);

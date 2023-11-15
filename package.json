@@ -6,6 +6,7 @@
     "start": "ng serve app",
     "start-nl": "ng serve app --configuration=nl",
     "build": "ng build app",
+    "build-hello-world": "ng build hello-world && cd projects/hello-world && npm run build",
     "build-localized": "ng build app --localize",
     "postbuild-localized": "node bin/prebuild.js",
     "watch": "ng build --watch --configuration development app",

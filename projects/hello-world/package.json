@@ -1,6 +1,13 @@
 {
   "name": "@tailormap-b3p/hello-world",
-  "version": "0.0.2",
+  "version": "0.0.3",
+  "schematics": "./schematics/collection.json",
+  "ng-add": {
+    "save": "dependencies"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.schematics.json"
+  },
   "peerDependencies": {
     "@angular/common": "^16.2.0",
     "@angular/core": "^16.2.0",
