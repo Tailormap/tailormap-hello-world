@@ -4,7 +4,7 @@ const fs = require("fs/promises");
 
 const runCommand = (command, args, cwd) => {
   return new Promise((resolve, reject) => {
-    const workingDir = cwd || path.resolve(path.dirname('../'));
+    const workingDir = cwd || path.resolve(path.dirname('./'));
     const cmd = spawn(command, args, {
       stdio: 'inherit',
       env: process.env,
@@ -21,7 +21,7 @@ const runCommand = (command, args, cwd) => {
 };
 
 const getPackageJsonPath = (project) => {
-  return path.resolve(__dirname, '../projects/', project, 'package.json');
+  return path.resolve(__dirname, './projects/', project, 'package.json');
 }
 
 const getPackageJson = async (project) => {
@@ -36,9 +36,9 @@ const getCurrentVersion = async (project) => {
 const publishRelease = async () => {
   const project = 'hello-world';
   const scope = '@tailormap-b3p';
-  await runCommand('npm', ['version', 'patch'], path.resolve(__dirname, '../projects/', project));
+  await runCommand('npm', ['version', 'patch'], path.resolve(__dirname, './projects/', project));
   await runCommand('ng', ['build', project]);
-  await runCommand('npm', ['publish', '--scope=' + scope, '--registry=https://repo.b3p.nl/nexus/repository/npm-public'], path.resolve(__dirname, '../dist/', project));
+  await runCommand('npm', ['publish', '--scope=' + scope, '--registry=https://repo.b3p.nl/nexus/repository/npm-public'], path.resolve(__dirname, './dist/', project));
   await runCommand('git', ['add', '-A']);
   const currentVersion = await getCurrentVersion(project);
   await runCommand('git', ['commit', '-m', `Released version ${currentVersion} of ${project} project`])

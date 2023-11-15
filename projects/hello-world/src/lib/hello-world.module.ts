@@ -17,10 +17,6 @@ import { SharedModule } from '@tailormap-viewer/shared';
     CoreModule,
     SharedModule,
     CommonModule,
-  ],
-  exports: [
-    HelloWorldComponent,
-    HelloWorldPanelComponent,
   ]
 })
 export class HelloWorldModule {
