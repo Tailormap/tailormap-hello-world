@@ -6,6 +6,7 @@ import { CoreModule, CoreRoutingModule } from "@tailormap-viewer/core";
 import { SharedModule } from "@tailormap-viewer/shared";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { environment } from '../environments/environment';
+import { HelloWorldModule } from '@tailormap-b3p/hello-world';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { environment } from '../environments/environment';
     CoreModule,
     CoreRoutingModule,
     SharedModule,
+    HelloWorldModule,
     ...environment.imports,
   ],
   providers: [],

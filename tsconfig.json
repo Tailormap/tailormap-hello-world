@@ -7,6 +7,13 @@
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,
+    "paths": {
+      "@tailormap-b3p/hello-world": [
+        "dist/hello-world/hello-world",
+        "dist/hello-world",
+        "projects/hello-world/src"
+      ]
+    },
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

@@ -1,0 +1,7 @@
+<button mat-icon-button
+        (click)="handleClick()"
+        tmTooltip="Open hello world component"
+        matTooltipPosition="right"
+        [class.button--active]="(active$ | async) ?? false">
+  <mat-icon svgIcon="visibility"></mat-icon>
+</button>
