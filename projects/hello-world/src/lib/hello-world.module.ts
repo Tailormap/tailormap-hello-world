@@ -6,16 +6,23 @@ import { HELLO_WORLD_COMPONENT_ID } from './hello-world-component-id';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@tailormap-viewer/shared';
 import { BaseComponentConfigComponent, ConfigurationComponentRegistryService } from '@tailormap-admin/admin-core';
+import { RouterModule } from '@angular/router';
+import { HelloWorldPageComponent } from './hello-world-page.component';
 
 @NgModule({
   declarations: [
     HelloWorldComponent,
     HelloWorldPanelComponent,
+    HelloWorldPageComponent,
   ],
   imports: [
     CoreModule,
     SharedModule,
     CommonModule,
+    RouterModule.forChild([{
+      path: 'ext/hello-world',
+      component: HelloWorldPageComponent,
+    }]),
   ]
 })
 export class HelloWorldModule {
