@@ -21,7 +21,7 @@ function addTranslationsToAngular(options: Schema) {
         const locales = projectObject.i18n.locales;
         Object.entries(translation).forEach(([ language, translationFile ]) => {
           if (locales[language]) {
-            locales[language].translations.push(translationFile);
+            locales[language].translation.push(translationFile);
           }
         });
         host.overwrite('angular.json', JSON.stringify(angularJsonFileObject, null, 2));
