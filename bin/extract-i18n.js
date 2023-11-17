@@ -16,7 +16,8 @@ const angularJsonBackupPath = path.resolve(__dirname, '../angular.json.orig');
 const addTemporaryConfiguration = async (project) => {
   const removeIdsWithPrefix = availableProjects
     .filter(t => t !== project)
-    .map(p => `${p}.`);
+    .map(p => `${p}.`)
+    .concat(['admin-core.', 'core.', 'shared.']);
   const configuration = {
     "outputPath": `projects/${project}/assets/locale`,
     "removeIdsWithPrefix": removeIdsWithPrefix,

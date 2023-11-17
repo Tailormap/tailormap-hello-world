@@ -1,5 +1,6 @@
 <button mat-icon-button
         (click)="handleClick()"
+        i18n-tmTooltip="@@tailormap-ext-hello-world.tooltip"
         tmTooltip="Open hello world component"
         matTooltipPosition="right"
         [class.button--active]="(active$ | async) ?? false">

@@ -2,8 +2,8 @@
   <p>{{ helloWorldMessage }}</p>
 
   <p>
-    Here is a link to my full screen hello world:
-    <a routerLink="/ext/hello-world">-> Hello world full screen</a>
+    <ng-container i18n="@@tailormap-ext-hello-world.link-note">Here is a link to my full screen hello world:</ng-container>
+    <a routerLink="/ext/hello-world">-> <ng-container i18n="@@tailormap-ext-hello-world.link-text">Hello world full screen</ng-container></a>
   </p>
 
   <p><a href="https://github.com/B3Partners/tailormap-viewer" target="_blank">https://github.com/B3Partners/tailormap-viewer</a></p>

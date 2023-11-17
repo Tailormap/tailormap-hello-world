@@ -21,7 +21,7 @@ export class HelloWorldComponent implements OnInit {
   }
 
   public handleClick() {
-    this.menubarService.toggleActiveComponent(HELLO_WORLD_COMPONENT_ID, 'Hello World!');
+    this.menubarService.toggleActiveComponent(HELLO_WORLD_COMPONENT_ID, $localize `:@@tailormap-ext-hello-world.panel-title:Hello World!`);
   }
 
 }

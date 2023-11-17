@@ -1,0 +1,30 @@
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" target-language="nl" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="tailormap-ext-hello-world.hello-message" datatype="html">
+        <source>Hello world! I&apos;m on Tailormap 11!</source>
+        <target state="new">Hello world! I&apos;m on Tailormap 11!</target>
+      </trans-unit>
+      <trans-unit id="tailormap-ext-hello-world.link-note" datatype="html">
+        <source>Here is a link to my full screen hello world:</source>
+        <target state="new">Here is a link to my full screen hello world:</target>
+      </trans-unit>
+      <trans-unit id="tailormap-ext-hello-world.link-text" datatype="html">
+        <source>Hello world full screen</source>
+        <target state="new">Hello world full screen</target>
+      </trans-unit>
+      <trans-unit id="tailormap-ext-hello-world.page-title" datatype="html">
+        <source>Hello world page</source>
+        <target state="new">Hello world page</target>
+      </trans-unit>
+      <trans-unit id="tailormap-ext-hello-world.panel-title" datatype="html">
+        <source>Hello World!</source>
+        <target state="new">Hello World!</target>
+      </trans-unit>
+      <trans-unit id="tailormap-ext-hello-world.tooltip" datatype="html">
+        <source>Open hello world component</source>
+        <target state="new">Open hello world component</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

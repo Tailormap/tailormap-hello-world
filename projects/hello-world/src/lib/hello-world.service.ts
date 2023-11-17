@@ -8,7 +8,7 @@ export class HelloWorldService {
   constructor() { }
 
   public getMessage() {
-    return 'Hello world! I\'m on Tailormap 11!';
+    return $localize `:@@tailormap-ext-hello-world.hello-message:Hello world! I\'m on Tailormap 11!`;
   }
 
 }
