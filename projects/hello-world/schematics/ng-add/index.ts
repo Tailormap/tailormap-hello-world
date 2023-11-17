@@ -3,9 +3,10 @@ import { addRootImport } from '@schematics/angular/utility';
 import { Schema } from './schema';
 
 const moduleName = 'HelloWorldModule';
+const projectName = 'hello-world';
 const packageName = '@tailormap-b3p/hello-world';
 const translation = {
-  'nl': `node_modules/${packageName}/assets/locale/messages.core.nl.xlf`,
+  'nl': `node_modules/${packageName}/assets/locale/messages.${projectName}.nl.xlf`,
 };
 
 function addTranslationsToAngular(options: Schema) {

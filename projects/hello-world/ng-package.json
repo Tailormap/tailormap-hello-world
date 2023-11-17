@@ -1,7 +1,11 @@
 {
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/hello-world",
-  "assets": ["schematics/**/*.json", "**/files/**/*"],
+  "assets": [
+    "schematics/**/*.json",
+    "**/files/**/*",
+    "assets/**/*"
+  ],
   "lib": {
     "entryFile": "src/public-api.ts"
   }
